@@ -4,11 +4,15 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 - This application is an epitome of showing the integration of Generative AI with Nextjs 14.
 - Build the minimalistic UI to show the prompts interaction between user and ai chatbot.
 
-## Features
+## Libraries
 
-- Vercel
-- Nextjs 14
+- next
+- react
+- node-fetch
+- ai
 - ai-sdk/google
+- ai-sdk/google-vertex
+- ai-sdk/react
 - google/generative-ai
 - dompurify
 - lucide-react
