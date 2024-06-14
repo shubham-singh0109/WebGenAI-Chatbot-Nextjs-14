@@ -1,5 +1,43 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+# WebGenAI
+- This application is an epitome of showing the integration of Generative AI with Nextjs 14.
+- Build the minimalistic UI to show the prompts interaction between user and ai chatbot.
+
+## Features
+
+- Vercel
+- Nextjs 14
+- ai-sdk/google
+- google/generative-ai
+- dompurify
+- lucide-react
+- markdown-it
+- zod
+
+## Run Locally
+
+Clone the project
+
+```bash
+  git clone https://github.com/shubham-singh0109/WebGenAI-Chatbot-Nextjs-14.git
+```
+
+Go to the project directory
+
+```bash
+  cd WebGenAI-Chatbot-Nextjs-14
+```
+## Create a .env and add your Google Generative AI API Key
+
+GOOGLE_API_KEY=<type_your_api_key_here>
+
+Install dependencies and libraries
+
+```bash
+  npm install
+```
+
 ## Getting Started
 
 First, run the development server:
