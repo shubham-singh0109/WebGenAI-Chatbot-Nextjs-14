@@ -2,6 +2,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 # WebGenAI
 - This application is an epitome of showing the integration of Generative AI with Nextjs 14.
+- Give users a richer experience and broaden the insights derived from the user's data by building AI capabilities into the apps.
 - Build the minimalistic UI to show the prompts interaction between user and ai chatbot.
 
 ## Libraries
