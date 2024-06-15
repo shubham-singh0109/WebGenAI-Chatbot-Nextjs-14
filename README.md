@@ -15,6 +15,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 - ai-sdk/google-vertex
 - ai-sdk/react
 - google/generative-ai
+- tailwindcss
 - dompurify
 - lucide-react
 - markdown-it
