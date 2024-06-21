@@ -2,6 +2,7 @@
 
 import { useChat } from "@ai-sdk/react";
 import { Bot, Loader2, Send, User2 } from "lucide-react";
+import Image from 'next/image';
 import Markdown from "./component/markdown";
 
 export default function Home() {
@@ -17,12 +18,27 @@ export default function Home() {
     </main>
   );
 
+  // function RenderAvatar() {
+  //   return (
+  //     <div className="flex flex-col items-center mb-4">
+  //       <img src="https://i.pinimg.com/originals/af/7b/6e/af7b6ee82ae6de2df640d6d40c8fe8a4.gif" alt="AI Avatar" className="w-16 h-16 rounded-full mr-4" />
+  //       <h1 className="text-xl font-bold mr-4">NextAI</h1>
+  //     </div>
+  //   );
+  // }
+
   function RenderAvatar() {
     return (
       <div className="flex flex-col items-center mb-4">
-        <img src="https://i.pinimg.com/originals/af/7b/6e/af7b6ee82ae6de2df640d6d40c8fe8a4.gif" alt="AI Avatar" className="w-16 h-16 rounded-full mr-4" />
-        <h1 className="text-xl font-bold mr-4">NextAI</h1>
-      </div>
+      <Image
+        src="https://i.pinimg.com/originals/af/7b/6e/af7b6ee82ae6de2df640d6d40c8fe8a4.gif"
+        alt="AI Avatar"
+        width={70}
+        height={70}
+        className="rounded-full mr-4"
+      />
+      <h1 className="text-xl font-bold mr-4">NextAI</h1>
+    </div>
     );
   }
 
@@ -60,7 +76,9 @@ export default function Home() {
   function RenderMessages(){
     return <div id="chatbox" className="flex flex-col-reverse w-full text-left mt-4 gap-4 whitespace-pre-wrap">
       {messages.map((m, index)=>{
-        return <div className={`p-4 shadow-md rounded-md ml-10 relative ${
+        return <div 
+          key={index}
+          className={`p-4 shadow-md rounded-md ml-10 relative ${
           m.role === 'user' ? "bg-stone-300" : ""
         }`}>
           <Markdown text={m.content}/>
