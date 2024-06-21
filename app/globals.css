@@ -18,7 +18,7 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background-color: whitesmoke;
+  background-color:whitesmoke;
 }
 
 @layer utilities {

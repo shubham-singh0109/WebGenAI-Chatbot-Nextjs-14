@@ -10,11 +10,21 @@ export default function Home() {
   });
   return (
     <main className="flex min-h-screen flex-col text-black item-center p-12">
+      {RenderAvatar()}
       {RenderForm()}
       {RenderMessages()}
       {/* {JSON.stringify(messages)} */}
     </main>
   );
+
+  function RenderAvatar() {
+    return (
+      <div className="flex flex-col items-center mb-4">
+        <img src="https://i.pinimg.com/originals/af/7b/6e/af7b6ee82ae6de2df640d6d40c8fe8a4.gif" alt="AI Avatar" className="w-16 h-16 rounded-full mr-4" />
+        <h1 className="text-xl font-bold mr-4">NextAI</h1>
+      </div>
+    );
+  }
 
   function RenderForm(){
     return <form onSubmit={(event)=> {
@@ -67,5 +77,4 @@ export default function Home() {
     </div>
   }
 }
-
 
