@@ -1,4 +1,5 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Visit at website
+https://nextai-shubham-singhs-projects-d1be2dc1.vercel.app/
 
 # WebGenAI
 - This application is an epitome of showing the integration of Generative AI with Nextjs 14.
